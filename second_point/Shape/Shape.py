@@ -1,9 +1,14 @@
 from math import acos,degrees,sqrt
 
 class Point:
-    def __init__(self, x: float, y: float):
-        self._x = x
-        self._y = y
+    try:
+        def __init__(self, x: float, y: float):
+            self._x = x
+            self._y = y
+    except TypeError:
+        def __init__(self):
+            self.y = 0
+            self.x = 0
     def set_x(self,new_x):
         self._x = new_x
     def set_y(self,new_y):
