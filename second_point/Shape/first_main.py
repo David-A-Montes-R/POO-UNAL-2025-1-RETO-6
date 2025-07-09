@@ -29,7 +29,7 @@ print(triangulo_equilatero.compute_inner_angles())
 
 #testear el cuadrado
 
-p_sq1 = Point(0,0,0)
+p_sq1 = Point(0, 0)
 p_sq2 = Point(1, 0)
 p_sq3 = Point(1, 1)
 p_sq4 = Point(0, 1)

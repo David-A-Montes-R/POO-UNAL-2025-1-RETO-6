@@ -1,3 +1,8 @@
+Perdón u dobleu u. No hice esto a tiempo y ahora la estoy sufriendo, pero creo que ya lo hice de una manera suficiente.
+
+el programa de prueba lo deje igual. El manejo de excepciones es todo en Shape:
+
+```python
 from math import acos,degrees,sqrt
 
 class Point:
@@ -240,3 +245,9 @@ class Square(Rectangle):
             print(l.length)
         if not (len(self.lines) == 4 and (lineas.count(lineas[0]) == 4)):
             raise TypeError("estas líneas no pueden formar un cuadrado")  
+```
+
+La mayoría de excepciones y errores se pueden dar porque no se definión bien una línea o un punto, también es posible que Shape falle si no se le introducen los parámetros adecuados.
+En la clase ``Point`` se debe verificar que las coordenadas introducidas al punto sean válidas, en la clase ``Line`` se verifica que los puntos sean válidos, y en la clase ``Shape``se verifica que las líneas para la figura sea una cantidad válida.
+
+Por algún motivo no supe como personalizar el error de argumentos recibidos para la instancia de una clase.
